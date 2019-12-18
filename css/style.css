@@ -1,0 +1,715 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+::-webkit-scrollbar{
+	display: none;
+}
+
+body{
+	overflow-y: auto;
+}
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/*--------------------------------------------------------------*/
+/* Reusable components */
+/*--------------------------------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/*--------------------------------------------------------------*/
+/* Navigation */
+/*--------------------------------------------------------------*/
+
+nav{
+	background-color: black;
+}
+
+.sticky-nav {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 1px 1px 0 #f5f5f5e3;
+    z-index: 9999;
+}
+
+.sticky-nav .main-nav li a:link,
+.sticky-nav .main-nav li a:visited{
+    padding-top: 18px 0;
+    color: rgb(255, 255, 255);
+}
+
+
+.main-nav h1{
+	float: left;
+	color: white;
+	font-weight: 1000;
+	font-family: 'Avant Garde Demi Oblique BT';
+}
+
+.main-nav ul{
+	float:right;
+	display: inline-block;
+	margin-top: 25px;
+}
+
+.main-nav li{
+	list-style: none;
+	float: left;
+	color: white;
+	padding-right: 10px;
+	font-weight: 500%;
+	font-family: 'Avant Garde Demi Oblique BT';
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+	text-decoration: none;
+    color: #fcfcfc;
+    font-size: 120%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    padding-bottom: 5px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #ffffff;
+}
+
+.main-nav::after{
+	height: 0px;
+}
+
+#typed{
+	font-family: 'Avant Garde Book BT';
+}
+/*--------------------------------------------------------------*/
+/* Welcome Portfolio*/
+/*--------------------------------------------------------------*/
+
+
+.hero-text-box{
+
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.portfolio-section{
+	background-color: black;
+	height: 700px;
+	width: auto;
+}
+
+.portfolio-section h1{
+	margin-top: 25%;
+	text-align: center;
+	color: white;
+	font-size: 4em;
+}
+
+
+/*--------------------------------------------------------------*/
+/* Portfolio Introduction */
+/*--------------------------------------------------------------*/
+
+
+.portfolio-profile{
+	padding-top: 10%;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.75),rgba(37, 37, 37, 0.75)),url("img/HTML.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	width: 100%;
+}
+
+.profile-summary{
+	padding-left: 10px;
+	padding-top: 20px;
+	font-size:90%;
+	font-weight: 1000;
+	color:white;
+}
+
+.profile-summary p{
+	font-size: 120%;
+	font-family: 'Avant Garde Book BT';
+}
+.portfolio{
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.144);
+	display: inline-block;
+}
+.portfolio-pic{
+	border-radius: 50%;
+	margin-left: 25%;
+	margin-top: 10%;
+	width: 200px;
+	height: auto;
+	display: inline-block;
+	position: relative;
+}
+
+.portfolio h2{
+	font-size: 120%;
+	font-family: 'Avant Garde Demi BT';
+	margin-left: 17%;
+	color: white
+}
+
+.portfolio-details ul{
+	margin-left: 17.5%;
+	margin-top: 25px;
+}
+.portfolio-details li{
+	margin-bottom: 5px;
+	list-style: none;
+	line-height: 1cm;
+	color: white;
+}
+
+.portfolio a{
+	text-decoration: none;
+	color: white;
+}
+
+.portfolio-icons{
+	font-size: 100%;
+	padding-right: 10px;
+	color: rgb(255, 40, 40);	
+}
+
+#skill{
+	margin: 10px 0;
+	font-size: 120%;
+
+}
+
+/*--------------------------------------------------------------*/
+/* Skills */
+/*--------------------------------------------------------------*/
+
+
+.skill-list{
+	list-style: none;
+	margin-left:20px;
+	margin-top: 25px;
+	font-size: 150%;
+}
+
+.skill-list li{
+	padding-bottom: 5px;
+}
+
+.skill-list ion-icon{
+	margin-left: 10px;
+	margin-right: 10px;
+	color: white;
+}
+
+
+
+.skills{
+	background-color: rgb(255, 255, 255);
+}
+.skills h1{
+	font-family: 'Avant Garde Demi Oblique BT';
+	text-align: center;
+	color: blue;
+	font-weight: 900;
+	margin-top: 0%;
+	margin-bottom: 5%;
+}
+
+.skill-box{
+	background-color: rgba(236, 236, 236, 0.815);
+	border-radius: 15px;
+	border-top: 3px solid blue;
+}
+
+.skill-box .skill_info{
+	/* font-weight: 600; */
+	border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.skill-box h3{
+	font-family: 'Avant Garde Demi BT';
+	margin-top: 10px;
+	margin-bottom: 25px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.skill-tech ul{
+	margin-top: 15px;
+	list-style: none;
+	margin-left: 15px;
+}
+
+.skill-tech li{
+	margin-bottom: 10px;
+	font-size: 90%;
+}
+
+.skill-tech h4{
+	font-size: 80%;
+	text-align: center;
+	margin-top: 5px;
+	font-weight: 1000;
+}
+#Skill_1 {
+	margin-top: 13%;
+	margin-bottom: 13%;
+	margin-left:5%;
+	width: 90%;
+	height: auto;
+	position: relative;
+}
+
+#Skill_2 {
+	margin-top: 13%;
+	margin-bottom: 13%;
+	margin-left:5%;
+	width: 90%;
+	height: auto;
+	position: relative;
+}
+
+#Skill_3 {
+	margin-top: 13%;
+	margin-bottom: 13%;
+	margin-left:5%;
+	width: 90%;
+	height: auto;
+	position: relative;
+}
+
+#Skill_4 {
+	margin-top: 13%;
+	margin-bottom: 13%;
+	margin-left:5%;
+	width: 90%;
+	height: auto;
+	position: relative;
+}
+#Skill_5 {
+	margin-top: 13%;
+	margin-bottom: 13%;
+	margin-left:5%;
+	width: 90%;
+	height: auto;
+	position: relative;
+}
+
+.technologies{
+	font-family: 'Avant Garde Book BT';
+	margin-top: 45px;
+	background-color: rgba(236, 236, 236, 0.815);
+	border-radius: 7.5px;
+	border-top: 3px solid blue;
+}
+
+.technologies div{
+	float: left;
+}
+.technologies .col{
+	border-right : 0.5px solid rgb(223, 223, 223);
+}
+
+
+.technologies h3{
+	font-family: 'Avant Garde Demi Oblique BT';
+	margin-top:30px;
+	margin-bottom: 30px;
+	color: blue;
+	text-align: center;
+	font-size: 35px;
+}
+
+.technologies ul{
+	list-style: none;
+	margin-top: 10%;
+	margin-left: 10%;
+}
+
+.technologies li{
+	margin-bottom: 5%;
+	font-weight: 900;
+}
+
+
+.bold li{
+	font-weight: bold;
+	font-size: 110%;
+	color: blue;
+}
+.project_link_tech{
+	width: 20%;
+}
+.project_link_tech ul{
+	padding-top: 5%;
+	font-size: 100%;
+}
+.project_link_tech li{
+	margin-bottom: 7.5%;
+}
+
+.project_link_tech a{
+	text-decoration: none;
+	color: red;
+}
+
+/*--------------------------------------------------------------*/
+/* Work Experiences */
+/*--------------------------------------------------------------*/
+
+/* .experiences{
+	color: white;
+	background-color: linear-gradient(rgba(202, 202, 202, 0.507) ,rgba(133, 133, 133, 0.507)),grey;
+} */
+
+.experiences{
+	width: 100%;
+	background-color: black;
+	color: white;
+}
+
+
+.experiences h1{
+	font-family:'Avant Garde Demi Oblique BT';
+	text-align: center;
+	margin-bottom: 5%;
+	margin-top: 0%;
+}
+
+.work{
+	border-radius: 10px;
+	background-color: rgba(212, 212, 212, 0.438);
+	float: left;
+}
+
+.work h3{
+	font-family: 'Avant Garde Demi BT';
+	text-align: center;
+	margin-bottom: 5%;
+	margin-top: 5%;
+	font-size: 175%;
+	font-weight: bold;
+}
+
+.work ul{
+	margin-left: 5%;
+	margin-bottom: 10%;
+	padding-right: 5%;
+	justify-content: left;
+	list-style: none;
+}
+
+.work li{
+	font-family: 'Avant Garde Book BT';
+	font-size: 90%;
+	margin-bottom: 5%;
+}
+
+.work a{
+	margin-left: 5%;
+	text-decoration: none;
+	color: white;
+}
+
+.work div{
+	margin-bottom: 10%;
+	border-bottom: 1px solid rgb(102, 101, 101);
+}
+.project-link a{
+	text-decoration: none;
+	margin-left: 5%;
+	margin-right: 5%;
+	color: white;
+	font-weight: bold;
+	font-size: 80%;
+	padding-bottom: 10%;
+}
+
+
+.location{
+	font-size: 90%;
+	margin-left: 10%;
+	padding-bottom: 10%;
+}
+
+.year{
+	margin-left: 10%;
+	padding-bottom: 10%;
+}
+
+/*--------------------------------------------------------------*/
+/* Projects */
+/*--------------------------------------------------------------*/
+
+.projects{
+	padding: 0px;
+}
+.projects h1{
+	font-family: 'Avant Garde Demi Oblique BT';
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.projects h4{
+	font-family: 'Avant Garde Demi BT';
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+
+.project-imgs{
+    margin-top: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.project-imgs li{
+	display: block;
+    float: left;
+    width: 25%;
+}
+
+.project-imgs figure{
+	width:100%;
+    margin-top:0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.project-imgs img{
+	width: 100%;
+    height: auto;
+    transform: scale(1.20);
+    transition: transform 0.5s, opacity 0.5s;
+	opacity: 0.5;
+	position: relative;
+	float: left;
+	background-position: 50% 50%;
+    background-repeat:  no-repeat;
+    background-size:  cover;
+}
+
+.project-imgs img:hover{
+    transform: scale(1);
+    opacity: 1;
+    /* background-image; */
+}
+
+.white-popup {
+	position: relative;
+	background: rgba(46, 46, 46, 0.75);
+	color: white;
+	padding: 15px;
+	width:auto;
+	max-width: 800px;
+	margin: 10% auto; 
+}
+
+.white-popup h1{
+	text-align: center;
+}
+
+.white-popup ul{
+	margin-left: 5%;
+	margin-top: 5%;
+}
+
+.white-popup li{
+	margin-bottom: 2%;
+}
+
+.tech_used{
+	list-style: none;
+	padding-bottom: 10%;
+}
+
+.tech_used li{
+	float: left;
+	padding-right: 2%;
+}
+.mfp-move-horizontal .mfp-with-anim {
+	opacity: 0;
+	transition: all 0.3s;
+	transform: translateX(-50px);
+}
+.mfp-move-horizontal.mfp-bg {
+	opacity: 0;
+	transition: all 0.3s;
+}
+.mfp-move-horizontal.mfp-ready .mfp-with-anim {
+	opacity: 1;
+	transform: translateX(0);
+}
+.mfp-move-horizontal.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+.mfp-move-horizontal.mfp-removing .mfp-with-anim {
+	transform: translateX(50px);
+	opacity: 0;
+}
+.mfp-move-horizontal.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+
+/*--------------------------------------------------------------*/
+/* Projects */
+/*--------------------------------------------------------------*/
+
+.js--wp-1{
+    opacity: 0;
+}
+
+.js--wp-1 .animated{
+    opacity: 1;
+}
+
+.js--wp-2{
+    opacity: 0;
+}
+
+.js--wp-2 .animated{
+    opacity: 1;
+}
+
+
+.js--wp-3{
+    opacity: 0;
+}
+
+.js--wp-3 .animated{
+    opacity: 1;
+}
+
+.js--wp-4{
+    opacity: 0;
+}
+
+.js--wp-4 .animated{
+    opacity: 1;
+}
+
+/*--------------------------------------------------------------*/
+/* Projects */
+/*--------------------------------------------------------------*/
+
+.footer-details{
+	margin: 1% 0;
+	background-color: black;
+	color: white;
+}
+
+.footer-details .row{
+	margin: 0 5%;
+	padding: 1%;
+}
+
+.footer-details .col{
+	margin-right: 10px;
+}
+.footer{
+	margin-right: 1%;
+	width: 50%;
+}
+
+.links{
+	width: 25%;
+}
+.footer-details p{
+	font-family: 'Avant Garde Book BT';
+	font-size: 100%;
+}
+
+
+.footer-details h1{
+	font-family: 'Avant Garde Demi Oblique BT';
+	font-size: 300%;
+	text-transform: capitalize;
+}
+
+.footer-details ul{
+	margin-top: 10%;
+	list-style: none;
+}
+
+.footer-details li{
+	float: left;
+	padding: 1% 1%;
+}
+
+.footer-icons{
+	color: white;
+	font-size: 300%;
+	transition: color 0.2s;
+}
+
+
+.linkedin-logo:active,
+.linkedin-logo:hover{
+	color:#0072b1;
+}
+
+
+.github-logo:active,
+.github-logo:hover{
+	color: #9CDAF1;
+}
+
+.email-logo:active,
+.email-logo:hover{
+	color: rgb(75, 204, 255);
+}
+
+.call-logo:active,
+.call-logo:hover{
+	color: rgb(0, 253, 0);
+}
+
+.call-logo{
+	line-height: -200px;
+}
+
+
