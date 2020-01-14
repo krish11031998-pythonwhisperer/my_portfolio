@@ -30,7 +30,19 @@ body{
     visibility: hidden;
 }
 
+.h_box{
+	width: 20%;
+	margin: 5% 40%;
+}
+.black_white{
+	background-color: black;
+	color: white;
+}
 
+.white_black{
+	background-color: white;
+	color: black;
+}
 /*--------------------------------------------------------------*/
 /* Reusable components */
 /*--------------------------------------------------------------*/
@@ -115,7 +127,7 @@ nav{
 }
 
 #typed{
-	font-family: 'Avant Garde Book BT';
+	font-family: 'Avant Garde Demi Oblique BT';
 }
 /*--------------------------------------------------------------*/
 /* Welcome Portfolio*/
@@ -150,12 +162,18 @@ nav{
 
 
 .portfolio-profile{
-	padding-top: 10%;
-	background-image:linear-gradient(rgba(0, 0, 0, 0.75),rgba(37, 37, 37, 0.75)),url("img/HTML.jpg");
+	padding: 5% 5%;
+	background-color: white;
+	/* background-image:linear-gradient(rgba(0, 0, 0, 0.75),rgba(37, 37, 37, 0.75)),url("img/HTML.jpg"); */
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 	width: 100%;
+}
+
+.portfolio-profile h1{
+	font-family:  'Avant Garde Demi Oblique BT';
+	padding: 1% 1% ;
 }
 
 .profile-summary{
@@ -163,66 +181,185 @@ nav{
 	padding-top: 20px;
 	font-size:90%;
 	font-weight: 1000;
-	color:white;
+	color:rgb(0, 0, 0);
 }
 
 .profile-summary p{
+	padding: 2% 1%;
 	font-size: 120%;
-	font-family: 'Avant Garde Book BT';
+	font-family: 'Playfair Display', serif;
 }
 .portfolio{
+	padding: 2% 2%;
 	border-radius: 10px;
-	background-color: rgba(255, 255, 255, 0.144);
-	display: inline-block;
+	transform: scale(1);
+	font-family: 'Avant Garde Book BT';
 }
+
 .portfolio-pic{
-	border-radius: 50%;
-	margin-left: 25%;
-	margin-top: 10%;
-	width: 200px;
+	border-radius: 75%;
+	padding: 0% 20%;
+	width: auto;
 	height: auto;
-	display: inline-block;
 	position: relative;
 }
 
 .portfolio h2{
 	font-size: 120%;
 	font-family: 'Avant Garde Demi BT';
-	margin-left: 17%;
-	color: white
+	padding: 5% 12.5%;
+	color: rgb(0, 0, 0)
 }
 
 .portfolio-details ul{
 	margin-left: 17.5%;
 	margin-top: 25px;
+	padding-bottom: 5%;
 }
 .portfolio-details li{
 	margin-bottom: 5px;
 	list-style: none;
 	line-height: 1cm;
-	color: white;
+	color: rgb(0, 0, 0);
 }
 
 .portfolio a{
 	text-decoration: none;
-	color: white;
+	color: rgb(0, 0, 0);
 }
 
 .portfolio-icons{
 	font-size: 100%;
 	padding-right: 10px;
-	color: rgb(255, 40, 40);	
+	color: rgb(0, 0, 0);	
 }
 
 #skill{
 	margin: 10px 0;
 	font-size: 120%;
+}
+
+.timeline{
+	padding: 2% 2%;
+	color: black;
+	
+}
+.timeline h3{
+	padding: 1% 1%;;
+	text-align: center;
+	font-family: 'Avant Garde Book BT';
+	font-size: 110%;
+}
+
+.timeline p{
+	padding: 2% 0%;
+	font-size: 95%;
+}
+
+.timeline ul{
+	padding: 5% 2%;
+	list-style: none;
 
 }
 
+.timeline li{
+	font-family: 'Playfair Display', serif;
+	padding: 1.5% 0%;
+	font-size: 80%;
+	font-weight: 400;
+}
+
+.memo:active,
+.memo:link{
+	padding: 2% 2%;
+	opacity: 1;
+	transform: scale(1);
+	color: black;
+	transition: transform 0.5s;
+}
+
+.memo:hover,
+.memo:visited{
+	transform: scale(0.9);
+	opacity: 0.75;
+	color: rgb(0, 0, 0);
+}
+.past{
+	padding: 2% 1%;
+	background-color: rgba(116, 255, 116, 0.33);
+	border-radius: 10px;
+}
+.present{
+	padding: 2% 1%;
+	background-color: rgba(116, 255, 116, 0.66);
+	border-radius: 10px;
+}
+.future{
+	padding: 2% 1%;
+	background-color: rgba(116, 255, 116, 0.99);
+	border-radius: 10px;
+}
+
+
+.interest{
+	padding: 2% 2%;
+	background-color: rgba(160, 160, 160, 0.50);
+	border-radius: 10px;
+	transform: scale(1);
+	border-bottom: 2px solid black;
+	transition: transform 0.5s;	
+}
+
+.interest:hover{
+	transform: scale(0.9);
+}
+
+
+.interest h3{
+	text-align: center;
+	font-family: 'Avant Garde Demi Oblique BT';
+	color: white;
+}
+
+
+/*--------------------------------------------------------------*/
+/* Education */
+/*--------------------------------------------------------------*/
+.education{
+	background-color: black;
+}
+.education h1{
+	padding: 1% 1%;
+	text-align: center;
+	font-family: 'Avant Garde Demi Oblique BT';
+	color: black;
+}
+
+.uni_edu{
+	padding: 5% 5%;
+	color: white;
+}
+
+.uni_edu ion-icon{
+	padding: -1% 2%
+}
+
+.uni_edu ul{
+	list-style: none;
+	padding: 1% 1%;
+}
+
+.uni_edu li{
+	padding: 1% 4%;
+}
+
+.sub_list li{
+	padding: 0% 10%;
+}
 /*--------------------------------------------------------------*/
 /* Skills */
 /*--------------------------------------------------------------*/
+
 
 
 .skill-list{
@@ -239,10 +376,8 @@ nav{
 .skill-list ion-icon{
 	margin-left: 10px;
 	margin-right: 10px;
-	color: white;
+	color: rgb(0, 0, 0);
 }
-
-
 
 .skills{
 	background-color: rgb(255, 255, 255);
@@ -250,10 +385,10 @@ nav{
 .skills h1{
 	font-family: 'Avant Garde Demi Oblique BT';
 	text-align: center;
-	color: blue;
+	color: white;
+	background-color: black;
 	font-weight: 900;
-	margin-top: 0%;
-	margin-bottom: 5%;
+	padding: 1% 1%;
 }
 
 .skill-box{
@@ -341,7 +476,7 @@ nav{
 	margin-top: 45px;
 	background-color: rgba(236, 236, 236, 0.815);
 	border-radius: 7.5px;
-	border-top: 3px solid blue;
+	border-top: 3px solid rgb(0, 0, 0);
 }
 
 .technologies div{
@@ -356,7 +491,7 @@ nav{
 	font-family: 'Avant Garde Demi Oblique BT';
 	margin-top:30px;
 	margin-bottom: 30px;
-	color: blue;
+	color: rgb(3, 3, 3);
 	text-align: center;
 	font-size: 35px;
 }
@@ -409,12 +544,15 @@ nav{
 	color: white;
 }
 
-
+.experiences .h_box{
+	margin: 5% 35%;
+	width: 30%;
+}
 .experiences h1{
 	font-family:'Avant Garde Demi Oblique BT';
 	text-align: center;
-	margin-bottom: 5%;
-	margin-top: 0%;
+	padding: 1% 1%;
+
 }
 
 .work{
@@ -441,7 +579,7 @@ nav{
 }
 
 .work li{
-	font-family: 'Avant Garde Book BT';
+	font-family: 'Playfair Display', serif;
 	font-size: 90%;
 	margin-bottom: 5%;
 }
@@ -483,13 +621,12 @@ nav{
 /*--------------------------------------------------------------*/
 
 .projects{
-	padding: 0px;
+	padding-top: 2%;
 }
 .projects h1{
 	font-family: 'Avant Garde Demi Oblique BT';
 	text-align: center;
-	margin-top: 5%;
-	margin-bottom: 5%;
+	padding: 1% 1%;
 }
 
 .projects h4{

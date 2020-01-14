@@ -3,7 +3,7 @@ $(document).ready(function (){
     var JS = new Skill_bar('#Skill_2');
     var HTML = new Skill_bar('#Skill_3');
     var CSS = new Skill_bar('#Skill_4');
-    var Cpp = new Skill_bar('#Skill_5');
+    var CSharp = new Skill_bar('#Skill_5');
     var typed = new Typed('#typed', {
         strings: ["Hello World", "My name is Krishna","Welcome to my portfolio website"],
         typeSpeed: 70,
@@ -54,11 +54,11 @@ $(document).ready(function (){
             
             JS.animate_bar(0.75);
             
-            HTML.animate_bar(0.70);
+            HTML.animate_bar(0.80);
             
-            CSS.animate_bar(0.65);
+            CSS.animate_bar(0.70);
             
-            Cpp.animate_bar(0.80);
+            CSharp.animate_bar(0.80);
         },
         offset: "60%"
     });
